@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Created</th>
+            <th>Customer</th>
+            <th>Invoice</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: orders">
+        <tr>
+            <td data-bind="text: id"></td>
+            <td data-bind="text: time.date"></td>
+            <td data-bind="if: customer">
+                <!-- ko text: customer.name --><!-- /ko -->
+                <!-- ko text: customer.surname --><!-- /ko -->
+            </td>
+            <td data-bind="if: invoice">Yes</td>
+        </tr>
+    </tbody>
+</table>

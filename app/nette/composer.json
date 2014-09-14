@@ -1,0 +1,22 @@
+{
+    "name": "bauer01/get-started",
+    "type": "project",
+    "description": "The ORM demonstration",
+    "keywords": ["php", "mapping", "data", "orm", "database", "example"],
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Bronislav Sedlak",
+            "homepage": "http://github.com/bauer01"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "nette/nette": "~2.0@stable",
+        "bauer01/unimapper": "@dev",
+        "bauer01/unimapper-dibi": "@dev",
+        "bauer01/unimapper-nette": "@dev",
+        "bauer01/unimapper-mongo": "@dev"
+    },
+    "minimum-stability": "dev"
+}
