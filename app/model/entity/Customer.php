@@ -1,6 +1,6 @@
 <?php
 
-namespace GetStarted\Model\Entity;
+namespace Model\Entity;
 
 /**
  * @adapter Dibi(customer)

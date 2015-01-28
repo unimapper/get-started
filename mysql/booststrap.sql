@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `get_started` CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE `get_started`;
+
 CREATE TABLE IF NOT EXISTS `customer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,

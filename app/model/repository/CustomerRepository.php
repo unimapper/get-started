@@ -1,6 +1,6 @@
 <?php
 
-namespace GetStarted\Model\Repository;
+namespace Model\Repository;
 
 class CustomerRepository extends \UniMapper\Repository
 {

@@ -1,0 +1,26 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+  links:
+    - mysql
+    - mongo
+  volumes:
+    - ./app:/var/www/html
+    - ./apache/sites-enabled:/etc/apache2/sites-enabled:ro
+
+mysql:
+  image: mysql
+  expose:
+    - "3306"
+  environment:
+     - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+  volumes:
+    - ./mysql/data:/var/lib/mysql
+    - ./mysql:/docker-entrypoint-initdb.d
+
+mongo:
+  image: mongo
+  expose:
+    - "27017"
+    - "28017"
